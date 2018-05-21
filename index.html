@@ -274,7 +274,7 @@
 <p>{BASE_URL} =&gt; URL base que aponta para sua WebAPI <br />
 {OPERATION_URI} =&gt; Endpoint especifico chamados pelo protocolo de pagamento Convertize</p>
 <h1 id='authentication'>Authentication</h1>
-<p>Nosso sistema envia 2 haders de validação que é possível customizar via ambiente administrativo da Convertize, segue exemplo abaixo:</p>
+<p>Nosso sistema envia 2 headers de validação que é possível customizar via ambiente administrativo da Convertize, segue exemplo abaixo:</p>
 
 <p><code>X-CONVERTIZE-APPKEY: APPKEY</code><br />
 <code>X-CONVERTIZE-APPTOKEN: APPTOKEN</code></p>
@@ -306,7 +306,7 @@ Você deve substituir <code>APPTOKEN</code> pelo seu token de acesso.
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>Neste endpoint nosso protocolo espera que você retorne quais as formas de pagamento sua WebAPI suporte.</p>
+<p>Neste endpoint nosso protocolo espera que você retorne quais as formas de parcelamento para uma forma de pagamento.</p>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET {BASE_URL}/installments?amount={amount}&amp;bin={bin}&amp;store={store}</code></p>
 <h3 id='request-headers'>Request Headers</h3>
@@ -424,7 +424,7 @@ Você deve substituir <code>APPTOKEN</code> pelo seu token de acesso.
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>Neste endpoint nosso protocolo espera que você retorne quais as formas de pagamento sua WebAPI suporte.</p>
+<p>Neste endpoint nosso protocolo espera que você retorne quais as formas de pagamento sua WebAPI suporta.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
 <p><code>GET {BASE_URL}/payments</code></p>
 <h3 id='response-body-2'>Response Body</h3>
